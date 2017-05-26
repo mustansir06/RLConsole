@@ -18,7 +18,6 @@ namespace RLConsole
         static void Main(string[] args)
         {
             #region Old Tests
-            
             //RotateArray();
             //PrintSentences();
             //GetLongestKUnique();
@@ -29,10 +28,10 @@ namespace RLConsole
             //Test();
             //CheckSumInArray();
             //FindMajority();
-
+            //FindLargestSum();
             #endregion
 
-            FindLargestSum();
+            FindMissing();
             Console.ReadLine();
         }
 
@@ -167,8 +166,7 @@ namespace RLConsole
                 Console.WriteLine("No majority element found");
             }
         }
-
-
+        
         private static void FindLargestSum()
         {
             int[] arr = new int[] { -2, -3, 4, -1, -2, 1, 5, -3 };
@@ -177,6 +175,14 @@ namespace RLConsole
             Print.Array(arr);
 
             Console.WriteLine("Largest sum in the given array is: " + largestSum.ToString());
+        }
+
+        private static void FindMissing()
+        {
+            int[] arr = new int[] { 1, 2, 3, 4, 5, 7, 8, 9, 10 };
+            Print.Array(arr);
+            int missing = MissingNumber.FindMissing(arr, 10);
+            Console.WriteLine("Missing number is: " + missing);
         }
 
         #endregion

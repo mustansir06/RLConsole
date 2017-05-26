@@ -50,6 +50,7 @@
     <Compile Include="Problems\Arrys\Islands.cs" />
     <Compile Include="Problems\Arrys\LargestSum.cs" />
     <Compile Include="Problems\Arrys\MajorityElement.cs" />
+    <Compile Include="Problems\Arrys\MissingNumber.cs" />
     <Compile Include="Problems\Arrys\Rotate.cs" />
     <Compile Include="Problems\Arrys\SumPair.cs" />
     <Compile Include="Problems\Arrys\UnionIntersect.cs" />
