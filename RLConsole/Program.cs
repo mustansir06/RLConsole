@@ -17,6 +17,8 @@ namespace RLConsole
     {
         static void Main(string[] args)
         {
+            #region Old Tests
+            
             //RotateArray();
             //PrintSentences();
             //GetLongestKUnique();
@@ -28,8 +30,9 @@ namespace RLConsole
             //CheckSumInArray();
             //FindMajority();
 
-            FindLargestSum();
+            #endregion
 
+            FindLargestSum();
             Console.ReadLine();
         }
 
@@ -251,44 +254,6 @@ namespace RLConsole
         }
 
         #endregion
-
-        #region Util Methods
-
-
-
-        #endregion
-
-
-        private static void Test()
-        {
-            byte[] b1 = new byte[] { 1,  2,  3,  4,  5,  6,  7,  8,  9, 10,
-                                    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                                    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-                                    31, 32, 33, 34, 35, 35, 36, 37, 38 };
-
-            byte[] b2 = new byte[10];
-
-            for (int i = 0; i < b1.Length; i += 10)
-            {
-                if (b1.Length - i >= 10)
-                {
-                    Array.Copy(b1, i, b2, 0, 10);
-                }
-                else
-                {
-                    b2 = new byte[10];
-                    Array.Copy(b1, i, b2, 0, b1.Length - i);
-                }
-            }
-
-        }
-
-
-        public static string GetMemberName<T>(Expression<Func<T>> memberExpression)
-        {
-            MemberExpression expressionBody = (MemberExpression)memberExpression.Body;
-            return expressionBody.Member.Name;
-        }
 
     }
 }
